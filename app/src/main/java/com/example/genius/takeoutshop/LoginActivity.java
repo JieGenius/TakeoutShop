@@ -359,8 +359,9 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
                         }
                     }).setNegativeButton("取消",null).show();
                 }
-                else if(response.equals("Allow")){
-                    startActivity(new Intent(LoginActivity.this,MainActivity.class));
+                else if(response.contains("Allow")){
+
+                    startActivity(new Intent(LoginActivity.this,MainActivity.class).putExtra("phone",mEmail).putExtra("id",response.split("w")[1]));
                 }
                 else if(response.equals("Waiting")){
                     dialog.setTitle("登录失败");

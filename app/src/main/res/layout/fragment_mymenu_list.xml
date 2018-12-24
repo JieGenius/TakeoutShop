@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+    <android.support.v7.widget.RecyclerView
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/my_menu_recycle_view"
+        android:name="com.example.genius.takeoutshop.MyMenuFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        tools:context=".MyMenuFragment"
+        tools:listitem="@layout/fragment_mymenu" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:text="添加新的菜品"
+        android:background="#1bd267"
+        android:textSize="18sp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        />
+
+</FrameLayout>
