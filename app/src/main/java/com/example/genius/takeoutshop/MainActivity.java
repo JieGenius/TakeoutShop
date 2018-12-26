@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
     private MyMenuFragment myMenuFragment;
     private MyOrderFragment myOrderFragment;
     private String phone;
-    private String id ;
+    private static String id ;
     private MyShopInfo myShopInfo;
     private MyMenu myMenu;
     private AllOrder allOrder;
@@ -192,6 +192,9 @@ public class MainActivity extends AppCompatActivity {
                 handler.sendEmptyMessage(3);
             }
         });
+    }
+    public static int getId(){
+        return Integer.parseInt(id);
     }
 
 }
